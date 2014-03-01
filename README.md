@@ -12,3 +12,5 @@ Made by: KoolKrafer of spigotmc.org with some config modifications.
 
 
 Download link: https://www.dropbox.com/home?select=HerochatBungeeBridge-Bukkit.jar
+
+Will need to re-generate your config, this goes on the SERVER NOT the Bungee server!
