@@ -4,3 +4,5 @@ user: banana
 pass: orange
 database: fruit
 port: 3306
+prefix: true #Must be true if you want to modify it.
+  newPrefix: &1[&eN&1]&f #Chat Colors supported.
