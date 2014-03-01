@@ -44,7 +44,8 @@ public class BungeeChatListener implements PluginMessageListener {
 			Bukkit.getLogger().warning("Channel "+chatchannel+" doesn't exist, but a message was receieved on it. Your Herochat configs aren't probably the same on each server.");
 			return;
 		} 
-		String prefix = plugin.getConfig().getString("prefix.newPrefix");
+		String prefixog = plugin.getConfig().getString("prefix.newPrefix");
+		String prefix = ChatColor.translateAlternateColorCodes('&', prefixog);
 		StringBuilder msg = new StringBuilder(channel.applyFormat(channel.getFormatSupplier().getAnnounceFormat(), "").replace("%2$s", message.replaceAll("(?i)&([a-fklmno0-9])", "\247$1")));
 		if (plugin.getConfig().getBoolean("prefix") == true)
 		{
